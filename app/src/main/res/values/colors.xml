@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="main_color">#102030</color>
+    <color name="title_green_color">#03aa5a</color>
+    <color name="main_item_color">#1a2a3a</color>
+    <color name="white">#fff</color>
+    <color name="optimize_color">#f04057</color>
+    <color name="main_item_text_color">#99a1ae</color>
+    <color name="main_item_volotage_color">#172737</color>
+    <color name="arc_default_color">#112131</color>
+    <color name="arc_process_color">#03aa5a</color>
+    <color name="cardcolor">#80ffffff</color>
+
+</resources>

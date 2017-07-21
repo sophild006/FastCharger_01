@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\com.google.code.gson\gson\2.6.2\f1bc476cc167b18e66c297df599b2377131a8947\gson-2.6.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="f1bc476cc167b18e66c297df599b2377131a8947">
+        <dex dex="E:\Zoomy\FastCharger\app\build\intermediates\pre-dexed\debug\gson-2.6.2_002b7fbf7a0de167c934ae8280ecce1c989b18df.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\Zoomy\FastCharger\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\24.1.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="c936c1bd42f0c018c18920c7bec619ef056b24f8">
+        <dex dex="E:\Zoomy\FastCharger\app\build\intermediates\pre-dexed\debug\com.android.support-animated-vector-drawable-24.1.1_e2a641f239a1194b356b678bae85d1cfb122f1b6.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\Zoomy\FastCharger\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\24.1.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="1256c10604bb098490eab070d76754ac5ceab35c">
+        <dex dex="E:\Zoomy\FastCharger\app\build\intermediates\pre-dexed\debug\com.android.support-appcompat-v7-24.1.1_ff50fdc2ace44565cde59a36cc8c3c799b0bdfaa.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\Zoomy\FastCharger\app\build\intermediates\exploded-aar\com.android.support\cardview-v7\24.1.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="4add8aa95c9f4e9a2ad64b7e2bf08e97e28955c1">
+        <dex dex="E:\Zoomy\FastCharger\app\build\intermediates\pre-dexed\debug\com.android.support-cardview-v7-24.1.1_13608b8ee4eb60d8b223b076a2fdd70f48fe1f59.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\com.squareup.okio\okio\1.6.0\98476622f10715998eacf9240d6b479f12c66143\okio-1.6.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="98476622f10715998eacf9240d6b479f12c66143">
+        <dex dex="E:\Zoomy\FastCharger\app\build\intermediates\pre-dexed\debug\okio-1.6.0_c410569bd3ae660f2a7eceb3af69efc833b46b70.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\Zoomy\FastCharger\app\build\intermediates\exploded-aar\com.android.support\design\24.1.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="e195bd694d5389acfba27ff4fdfa64c4c65b2c05">
+        <dex dex="E:\Zoomy\FastCharger\app\build\intermediates\pre-dexed\debug\com.android.support-design-24.1.1_f6e482386c5ade7268c4f833612851873beacacd.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\Zoomy\FastCharger\app\build\intermediates\exploded-aar\com.android.support\support-v4\24.1.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="6d7d803871e3203465f71a163e7af104f807b446">
+        <dex dex="E:\Zoomy\FastCharger\app\build\intermediates\pre-dexed\debug\com.android.support-support-v4-24.1.1_9d982d06f4146267e450fa9d56a7e4960ef0de87.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\Zoomy\FastCharger\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\24.1.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="f62e763609f65e47dc6c498760a4accf02776788">
+        <dex dex="E:\Zoomy\FastCharger\app\build\intermediates\pre-dexed\debug\com.android.support-support-vector-drawable-24.1.1_556bd958a072534cf6305d0fa6268912e86fa61f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\Android\SDK\extras\android\m2repository\com\android\support\support-annotations\24.1.1\support-annotations-24.1.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="3af19f153122737b372622fa6c81dd11a1c6b999">
+        <dex dex="E:\Zoomy\FastCharger\app\build\intermediates\pre-dexed\debug\support-annotations-24.1.1_54ceeaceaa50854d348921edd1ef502e83d97cbb.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\Zoomy\FastCharger\app\build\intermediates\exploded-aar\com.android.support\support-v4\24.1.1\jars\libs\internal_impl-24.1.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="f78c2f395cb096f9dc1dc07e729922b8fcd3c4f5">
+        <dex dex="E:\Zoomy\FastCharger\app\build\intermediates\pre-dexed\debug\internal_impl-24.1.1_d9eedd2c43c1934a6b5030f44f86ac3414ad5e04.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Administrator\.gradle\caches\modules-2\files-2.1\com.squareup.okhttp3\okhttp\3.2.0\f7873a2ebde246a45c2a8d6f3247108b4c88a879\okhttp-3.2.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="f7873a2ebde246a45c2a8d6f3247108b4c88a879">
+        <dex dex="E:\Zoomy\FastCharger\app\build\intermediates\pre-dexed\debug\okhttp-3.2.0_e97c4d684058659f4c78fd063d89ce0d8b400297.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\Zoomy\FastCharger\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\24.1.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="24.0.3"
+        sha1="787871951412550519b0222aba3c9df4cea49875">
+        <dex dex="E:\Zoomy\FastCharger\app\build\intermediates\pre-dexed\debug\com.android.support-recyclerview-v7-24.1.1_86453ba74687c3e52af3c287cc70dafd87920900.jar" />
+    </item>
+
+</items>

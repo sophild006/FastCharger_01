@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_color">
+
+    <include
+
+        android:id="@+id/tool_bar"
+        layout="@layout/layout_toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/tool_bar"
+        android:scrollbars="none">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/rl_content"
+                android:layout_width="match_parent"
+                android:layout_height="184dp">
+
+                <EditText
+                    android:id="@+id/ev_content"
+                    android:layout_width="match_parent"
+                    android:layout_height="184dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/feedback_edit_bg"
+                    android:gravity="top"
+                    android:textColorHint="#3c4958"
+                    android:hint="Your feedback  is the driving force of our progress"
+                    android:padding="5dp"
+                    android:textColor="#3c4958"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:id="@+id/tv_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginBottom="16dp"
+                    android:layout_marginRight="14dp"
+                    android:text="400 words"
+                    android:textColor="#3c4958" />
+            </RelativeLayout>
+
+
+            <EditText
+                android:id="@+id/ev_email"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:textColorHint="#3c4958"
+                android:layout_below="@id/rl_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/feedback_edit_bg"
+                android:hint="Leave your e-mail info for us  to help you"
+                android:padding="5dp"
+                android:textColor="#3c4958"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/tv_tips"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ev_email"
+                android:layout_marginLeft="14dp"
+                android:layout_marginTop="18dp"
+                android:text="*Please fill the contact way"
+                android:textColor="#d6575d"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_tips"
+                android:layout_marginLeft="14dp"
+                android:layout_marginTop="16dp"
+                android:text="@string/feedback_desc"
+                android:textColor="#3c4958"
+                android:textSize="14sp" />
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/rl_send"
+        android:layout_width="226dp"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/shape_sendtext_bg_normal">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true">
+
+            <ImageView
+                android:id="@+id/iv_send"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@drawable/paperplane_ico_w_40" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="9dp"
+                android:layout_toRightOf="@+id/iv_send"
+                android:text="Send Feedback"
+                android:textColor="#fff"
+                android:textSize="20sp" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

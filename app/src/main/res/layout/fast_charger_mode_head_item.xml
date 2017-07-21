@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="68dp"
+
+        android:background="@color/main_item_color">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp">
+
+            <ImageView
+                android:id="@+id/iv_head_item_choose"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="18dp"
+                android:src="@drawable/choose_btn_e_46" />
+
+            <TextView
+                android:layout_marginLeft="12dp"
+                android:id="@+id/tv_head_item_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/iv_head_item_choose"
+                android:text="2X Mode"
+                android:layout_centerVertical="true"
+                android:textColor="#99a1ae"/>
+
+            <ImageView
+                android:id="@+id/tv_head_item_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/tv_head_item_desc"
+                android:src="@drawable/arrow_down_ico_21" />
+            <ImageView
+                android:id="@+id/tv_head_item_icon"
+                android:layout_width="wrap_content"
+                android:layout_marginRight="12dp"
+                android:layout_alignParentRight="true"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:src="@drawable/mode2_ico_62" />
+        </RelativeLayout>
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

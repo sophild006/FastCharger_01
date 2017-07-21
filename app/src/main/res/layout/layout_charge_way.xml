@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/main_color">
+
+    <include
+        android:id="@id/tool_bar"
+        layout="@layout/layout_toolbar" />
+
+    <TextView
+        android:id="@+id/txtNoMoreIssue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="@string/close_tool_no_issue"
+        android:textColor="@color/white"
+        android:textSize="30.0sp"
+        android:visibility="gone" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/BannerAd"
+        android:layout_below="@id/tool_bar"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_margin="0.0dip"
+            android:orientation="vertical">
+
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/LocationCardView"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8.0dip"
+                android:layout_marginLeft="16.0dip"
+                android:layout_marginRight="16.0dip">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="146dp"
+                    android:background="@color/main_item_color">
+
+                    <RelativeLayout
+                        android:id="@+id/rl_top_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="12dp">
+
+                        <TextView
+                            android:id="@+id/TxtTitleLocation"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/close_tool_location_off"
+                            android:textColor="@color/white"
+                            android:textSize="18.0sp" />
+
+                        <TextView
+                            android:id="@+id/txtDicLocation"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/TxtTitleLocation"
+                            android:layout_marginRight="5dp"
+                            android:layout_marginTop="18dp"
+                            android:text="@string/close_tool_location_off_desc"
+                            android:textColor="@color/white"
+                            android:textSize="14.0sp" />
+
+                        <TextView
+                            android:id="@+id/LocationTurnOff"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/txtDicLocation"
+                            android:layout_marginTop="28dp"
+                            android:text="@string/close_tool_location_off_button"
+                            android:textColor="#04ac5b"
+                            android:textSize="18sp" />
+                    </RelativeLayout>
+
+
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/AroplaneCardView"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/LocationCardView"
+                android:layout_marginBottom="8.0dip"
+                android:layout_marginLeft="16.0dip"
+                android:layout_marginRight="16.0dip"
+                android:layout_marginTop="8.0dip">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="146dp"
+                    android:background="@color/main_item_color">
+
+                    <RelativeLayout
+                        android:id="@+id/rl_top_view_Aroplane"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="12dp">
+
+                        <TextView
+                            android:id="@+id/TxtTitleAroplane"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/close_tool_airplane_on"
+                            android:textColor="@color/white"
+                            android:textSize="18.0sp" />
+
+                        <TextView
+                            android:id="@+id/txtDicAroplane"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/TxtTitleAroplane"
+                            android:layout_marginTop="18dp"
+                            android:text="@string/close_tool_airplane_on_desc"
+                            android:textColor="@color/white"
+                            android:textSize="14.0sp" />
+
+                        <TextView
+                            android:id="@+id/AroplaneTurnOn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/txtDicAroplane"
+                            android:layout_centerVertical="true"
+                            android:layout_marginTop="28dp"
+                            android:text="@string/close_tool_airplane_on_button"
+                            android:textColor="#04ac5b"
+                            android:textSize="18sp" />
+                    </RelativeLayout>
+
+
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/MoblieDataCardView"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/AroplaneCardView"
+                android:layout_marginBottom="8.0dip"
+                android:layout_marginLeft="16.0dip"
+                android:layout_marginRight="16.0dip"
+                android:layout_marginTop="8.0dip">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="146dp"
+                    android:background="@color/main_item_color">
+
+                    <RelativeLayout
+                        android:id="@+id/rl_top_view_MoblieData"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="12dp">
+
+                        <TextView
+                            android:id="@+id/TxtTitleMobileData"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:text="@string/close_tool_internet_off"
+                            android:textColor="@color/white"
+                            android:textSize="18.0sp" />
+
+                        <TextView
+                            android:id="@+id/txtDicMobileData"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_below="@id/TxtTitleMobileData"
+                            android:layout_marginTop="18dp"
+                            android:text="@string/close_tool_internet_off_desc"
+                            android:textColor="@color/white"
+                            android:textSize="14.0sp" />
+
+                        <TextView
+                            android:id="@+id/MoblieDataTurnOff"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/txtDicMobileData"
+                            android:layout_marginRight="8.0dip"
+                            android:layout_marginTop="28dp"
+                            android:text="@string/close_tool_internet_off_button"
+                            android:textColor="#04ac5b"
+                            android:textSize="18sp" />
+
+                    </RelativeLayout>
+
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+            <LinearLayout
+                android:id="@+id/NativeAdContainer"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8.0dip"
+                android:layout_marginLeft="16.0dip"
+                android:layout_marginRight="16.0dip"
+                android:layout_marginTop="8.0dip"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="146dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="8dp"
+                    android:background="@color/main_item_color">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/battery_img_g_170" />
+
+                    <ImageView
+                        android:id="@+id/iv_ad_lable"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:src="@drawable/ad_label_g_30" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginRight="6dp"
+                        android:layout_marginTop="6dp"
+                        android:src="@drawable/admob_ico_b_20" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="64dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="44dp"
+                        android:layout_height="44dp"
+                        android:src="@mipmap/ic_launcher" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="14dp"
+                        android:layout_gravity="center_vertical"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv_ad_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:maxLines="1"
+                            android:singleLine="true"
+                            android:text="title"
+                            android:textColor="#fff"
+                            android:layout_marginBottom="12dp"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/tv_ad_desc"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:maxLines="1"
+                            android:singleLine="true"
+                            android:text="desc"
+                            android:textColor="#99a1ae"
+                            android:textSize="16sp" />
+                    </LinearLayout>
+                </LinearLayout>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="32dp"
+                    android:text="DOWNLAOD"
+                    android:textSize="14sp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:background="@drawable/ad_btn_bg"
+                    android:textColor="#fff"
+                    android:gravity="center"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

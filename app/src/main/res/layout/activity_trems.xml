@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_color"
+    android:orientation="vertical"
+    tools:context=".activity.TermsActivity">
+
+    <include layout="@layout/layout_toolbar"
+        android:id="@+id/tool_bar"/>
+    <RelativeLayout
+        android:id="@+id/rl_trems"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/nonetwork_img" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:text="@string/no_internet"
+            android:textColor="@color/main_color"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/btn_trem_internet"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="86dp"
+            android:background="@drawable/selector_btn_getinternet"
+            android:text="@string/get_internet"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+
+    <WebView
+        android:id="@+id/trems_web"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical" />
+
+
+    <com.ultra.fast.charger.battery.view.LoadingView
+        android:id="@+id/trem_loading"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone" />
+</LinearLayout>
