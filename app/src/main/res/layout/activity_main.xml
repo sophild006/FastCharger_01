@@ -197,7 +197,7 @@
 
                     <LinearLayout
                         android:layout_width="match_parent"
-                        android:layout_height="240.0dip"
+                        android:layout_height="280.0dip"
                         android:layout_centerInParent="true"
                         android:background="@color/main_item_color"
                         android:orientation="vertical"

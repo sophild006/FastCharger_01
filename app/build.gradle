@@ -1,5 +1,4 @@
 apply plugin: 'com.android.application'
-apply plugin: 'AndResGuard'
 android {
     compileSdkVersion 24
     buildToolsVersion "24.0.3"
@@ -32,41 +31,6 @@ android {
 
 }
 
-andResGuard {
-    // mappingFile = file("./resource_mapping.txt")
-    mappingFile = null
-    // It will be invalid when you sign apk with schemaV2
-    use7zip = true
-    useSign = true
-    // it will keep the origin path of your resources when it's true
-    keepRoot = false
-    whiteList = [
-            // your icon
-            "R.drawable.icon",
-            // for google-services.json
-            "R.string.google_app_id",
-            "R.string.gcm_defaultSenderId",
-            "R.string.default_web_client_id",
-            "R.string.ga_trackingId",
-            "R.string.firebase_database_url",
-            "R.string.google_api_key",
-            "R.string.google_crash_reporting_api_key",
-            "R.integer.google_play_services_version"
-    ]
-    compressFilePattern = [
-            "*.png",
-            "*.jpg",
-            "*.jpeg",
-            "*.gif",
-            "resources.arsc"
-    ]
-    sevenzip {
-        artifact = 'com.tencent.mm:SevenZip:1.2.1'
-        //path = "/usr/local/bin/7za"
-    }
-    // pngquant
-    // find . -name *.png | xargs pngquant -f --skip-if-larger --ext .png
-}
 repositories {
     flatDir {
         dirs 'libs'
