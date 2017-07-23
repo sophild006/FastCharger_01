@@ -45,4 +45,5 @@ dependencies {
     compile 'com.google.code.gson:gson:2.6.2'
     compile 'com.squareup.okhttp3:okhttp:3.2.0'
     compile 'com.facebook.android:audience-network-sdk:4.+'
+    compile 'com.nineoldandroids:library:2.4.0'
 }
