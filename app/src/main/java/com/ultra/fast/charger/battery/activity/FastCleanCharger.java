@@ -20,6 +20,7 @@ import android.view.animation.TranslateAnimation;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
+import android.widget.ScrollView;
 import android.widget.TextView;
 
 import com.ultra.fast.charger.battery.R;
@@ -44,7 +45,7 @@ public class FastCleanCharger extends BaseActivity {
     private CacheLoadingView ivBlueCheck, ivDataCheck;
     private RelativeLayout rlCheckBlue,rlCheckData;
     private TextView tvCleanDesc;
-
+    private ScrollView scrollView;
     private RelativeLayout rlCLeanView,rlResulutView;
     private LinearLayout llBatteryLeft,llBatteryOptimize;
     private Handler handler=new Handler(){
@@ -91,6 +92,8 @@ public class FastCleanCharger extends BaseActivity {
         rlResulutView= (RelativeLayout) findViewById(R.id.rl_result_page);
         llBatteryLeft= (LinearLayout) findViewById(R.id.ll_result_battery_left);
         llBatteryOptimize= (LinearLayout) findViewById(R.id.ll_result_battery_optimize);
+        scrollView= (ScrollView) findViewById(R.id.scrollView);
+
         ivApps0 = (ImageView) findViewById(R.id.iv_app_0);
         ivApps1 = (ImageView) findViewById(R.id.iv_app_1);
         ivApps2 = (ImageView) findViewById(R.id.iv_app_2);
@@ -102,7 +105,6 @@ public class FastCleanCharger extends BaseActivity {
         mIcons.add(ivApps2);
         mIcons.add(ivApps3);
         mIcons.add(ivApps4);
-
         ArrayList<AppEntity> allAppInfoSize = AppsUtils.getAllAppInfoSize(-1);
         if (allAppInfoSize != null && allAppInfoSize.size() > 0) {
             if (allAppInfoSize.size() > 5) {
@@ -125,29 +127,43 @@ public class FastCleanCharger extends BaseActivity {
             for (int i = 0; i < size; i++) {
                 mIcons.get(i).setVisibility(View.INVISIBLE);
             }
-            startAnim(num, 500);
+            if(count>size-2){
+                Log.d("wwq","startCheck  count: "+count);
+                startCheck();
+                count=0;
+            }else{
+                count++;
+                Log.d("wwq","count: "+count);
+                startAnim(num, 500);
+            }
             return;
         }
-        ValueAnimator valueAnimator = ValueAnimator.ofFloat(0, 1).setDuration(150);
         final int finalNum = num;
+        ValueAnimator valueAnimator = ValueAnimator.ofFloat(0, 1).setDuration(150);
+
         valueAnimator.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() {
             @Override
             public void onAnimationUpdate(ValueAnimator animation) {
                 float alpha = (float) animation.getAnimatedValue();
                 mIcons.get(finalNum).setAlpha(alpha);
-                mIcons.get(finalNum).setVisibility(View.VISIBLE);
             }
         });
         valueAnimator.addListener(new AnimatorListenerAdapter() {
             @Override
+            public void onAnimationStart(Animator animation) {
+                super.onAnimationStart(animation);
+                mIcons.get(finalNum).setVisibility(View.VISIBLE);
+            }
+            @Override
             public void onAnimationEnd(Animator animation) {
                 super.onAnimationEnd(animation);
-                if (count > size*5) {
-                    startCheck();
-                    return;
-                } else {
-                    count++;
-                }
+//                if (count > size*5) {
+////                    startCheck();
+//                    Log.d("wwq","count: "+count+"   size: "+size);
+//                    return;
+//                } else {
+//                    count++;
+//                }
                 startAnim(finalNum + 1, 0);
             }
         });
@@ -216,8 +232,6 @@ public class FastCleanCharger extends BaseActivity {
 
     private void moveTopAnimation(final RelativeLayout rlView, int startY,int transY) {
         rlView.setVisibility(View.VISIBLE);
-
-
         ValueAnimator valueAnimator=ValueAnimator.ofFloat(startY,-transY).setDuration(500);
         valueAnimator.addUpdateListener(new ValueAnimator.AnimatorUpdateListener() {
             @Override
@@ -225,6 +239,13 @@ public class FastCleanCharger extends BaseActivity {
                 float value= (float) animation.getAnimatedValue();
                 Log.d("wwq","value: "+value);
                 rlView.setY(value);
+
+            }
+        });
+        valueAnimator.addListener(new AnimatorListenerAdapter() {
+            @Override
+            public void onAnimationEnd(Animator animation) {
+                super.onAnimationEnd(animation);
             }
         });
         valueAnimator.start();
@@ -234,7 +255,6 @@ public class FastCleanCharger extends BaseActivity {
     @Override
     protected void onDestroy() {
         super.onDestroy();
-        count = 0;
         ivDataCheck.clearAnimation();
 
     }
